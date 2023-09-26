@@ -1,0 +1,1 @@
+Ajax send-receive test.

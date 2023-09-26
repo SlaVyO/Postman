@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Ajax Request Method Tester</title>
+  <meta name="description" content="Ajax form">
+  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="ajax.js"></script>
+    <style type="text/css">
+        .mar {
+            margin-left: 100px;
+            margin-top: 20px;
+            max-width: 500px;
+            display: block;
+            float: left;
+            margin-right: 50px;
+        }
+        #ajax_form {
+            margin-top: 50px;
+        }
+        #btn{
+            margin-top: 50px;
+            float: left;
+        }
+         input, label{
+            margin-top: 5px;
+        }
+        .form {
+            margin-top: 30px;
+            max-width: 500px;
+        }
+        .form input{
+            margin-right: 5px;
+        }
+        .methlabl{
+            /*display: block;*/
+        }
+         .methlabl {
+            display: block;
+            float: left;
+            margin-right: 10px;
+        }
+        #result_form{
+            display: block;
+            float: left;
+        }
+        .dattype{
+            margin-right: 33px;
+        }
+    </style>
+
+  
+
+</head>
+
+<body>
+    <div class="mar">
+        <div id="request_params">
+            <label for="method" class="methlabl" >Send method</label>
+            <select id="method" name="method">
+                <option value="get"   >GET</option>
+                <option value="post"  >POST</option>
+                <option value="put"   >PUT</option>
+                <option value="delete">DELETE</option>
+            </select><br>
+            <label for="dattype" class="dattype" >Data type</label>
+            <select id="dattype" name="dattype">
+                <option value="html"   >Html</option>
+                <option value="text"   >Text</option>
+                <option value="json"   >Json</option>
+                <option value="jsonp"  >JsonP</option>
+                <option value="script" >Script</option>
+                <option value="xml"   >XML</option>
+            </select><br>
+            <label for="url" class="urllabl">Request url</label><br>
+            <input type="text" name="url" id="url" size="30" placeholder="Request url" value="action.php" /><br>
+        </div>
+        <div class="form">
+            <button class="info__add">Add new params</button><br>
+            <label  class="Pname" >Parametr name  </label><label  class="Pval"  >Parametr value</label>
+        </div>
+        <input type="button" id="btn" value="Send" />
+        
+    </div>
+    <div id="result_form"><div> 
+</body>
+</html>
